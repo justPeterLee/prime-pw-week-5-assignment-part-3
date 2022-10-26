@@ -6,7 +6,7 @@ let collection = [];
 
 // addToCollection function 
 function addToCollection(title, artist, yearPublished){
-    collection.push({title: title, artist: artist, yearPublished: yearPublished})
+    collection.push({title: title, artist: artist, yearPublished: yearPublished});
 }
 
 
@@ -24,9 +24,27 @@ console.log(collection)
 function showCollection(arr){
     console.log(arr.length);
     for(let i = 0; i < arr.length; i++){
-        console.log(`${arr[i].title} by ${arr[i].artist} published in ${arr[i].yearPublished}`)
+        console.log(`${arr[i].title} by ${arr[i].artist} published in ${arr[i].yearPublished}`);
     }
 }
 
 // calling showCellection on Collection
 showCollection(collection)
+
+
+// findByArtist function 
+function findByArtist(artist){
+    let sameArtist = [];
+    for(let i=0; i < collection.length; i++){
+        if(artist === collection[i].artist){
+            sameArtist.push(collection[i]);
+        }
+    }
+    return sameArtist;
+}
+
+//testing function
+console.log(findByArtist("John Snow"));
+console.log(findByArtist("Random Guy"));
+
+
