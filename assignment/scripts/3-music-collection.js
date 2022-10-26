@@ -43,8 +43,13 @@ function findByArtist(artist){
     return sameArtist;
 }
 
-//testing function
+// testing function
 console.log(findByArtist("John Snow"));
 console.log(findByArtist("Random Guy"));
 
+
+// search function (STRETCH)
+function search(){
+    
+} 
 
