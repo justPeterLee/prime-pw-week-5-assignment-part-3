@@ -19,3 +19,14 @@ addToCollection('song5', 'Yoda Vader', '2010');
 addToCollection('song6', 'Spongebob', '1997');
 
 console.log(collection)
+
+// showCollection function
+function showCollection(arr){
+    console.log(arr.length);
+    for(let i = 0; i < arr.length; i++){
+        console.log(`${arr[i].title} by ${arr[i].artist} published in ${arr[i].yearPublished}`)
+    }
+}
+
+// calling showCellection on Collection
+showCollection(collection)
