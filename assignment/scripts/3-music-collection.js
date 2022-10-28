@@ -49,7 +49,17 @@ console.log(findByArtist("Random Guy"));
 
 
 // search function (STRETCH)
-function search(){
-    
+function search(obj){
+    let matches = [];
+    for(track of collection){
+        if(track.artist === obj.artist && track.yearPublished == obj.year){
+            matches.push(track);
+        }
+        console.log(track)
+    }
+
+    return matches;
 } 
+
+console.log(search({artist: 'Spongebob', year: 1997}))
 
