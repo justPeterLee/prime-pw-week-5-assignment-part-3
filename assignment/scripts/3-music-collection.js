@@ -63,29 +63,3 @@ function search(obj){
 
 console.log(search({artist: 'Spongebob', year: 1997}))
 
-
-
-
-let arr1 = [];
-
-function objMaker(name, age, color){
-    this.name = name;
-    this.age = age;
-    this.color = color;
-}
-
-let joe = new objMaker("Joe", '28', 'red');
-
-console.log(joe);
-
-arr1.push(objMaker)
-
-console.log(arr1);
-
-console.log(objMaker)
-
-
-
-let alex = arr1[0];
-console.log(alex)
-
